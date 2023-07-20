@@ -22,7 +22,7 @@ export default function Home() {
           y: progressY >= 50 ? progressY - 50 : -50 + progressY,
         });
         setPos({ x: progressX, y: progressY });
-        player.current.setSeeker(((progressX + progressY) / 200) * 125);
+        player.current.setSeeker(((progressX + progressY) / 200) * 480);
         // player.current.setPlayerSpeed(progressX / 5);
       };
       window.addEventListener("mousemove", updateScroll);
@@ -65,12 +65,13 @@ export default function Home() {
         <Player
           ref={player}
           frame={4}
-          src="https://lottie.host/88b44092-94a6-421f-b01a-cf862a5cff28/9lPb9BYkDf.json"
+          src="https://lottie.host/1ade3d4f-3f4d-4ecd-a7a5-b1a05f815fde/L7ELwutNrA.json"
           style={{
             height: "100%",
             width: "100%",
             maxHeight: "400px",
             maxWidth: "400px",
+            filter: "invert(1)",
           }}
         ></Player>
         <h1 className={styles.title}>MATÈRE</h1>
