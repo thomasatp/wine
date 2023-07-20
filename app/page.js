@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { useEffect, useState, useRef } from "react";
 import { Player } from "@lottiefiles/react-lottie-player";
+import video from "../public/medias/video.mp4";
 
 export default function Home() {
   const [position, setPosition] = useState({ x: 0, y: 0 });
@@ -35,6 +36,18 @@ export default function Home() {
 
   return (
     <main className={styles.main}>
+      <div className={styles.videoWrapper}>
+        <video
+          className="video-item"
+          preload="auto"
+          autoPlay
+          playsInline
+          loop
+          muted
+          src={video}
+          type="video/mp4"
+        />
+      </div>
       <h3 className={styles.xCoords}>
         {`47° 49' ${(0.01 * pos.x + 0.05).toFixed(2)}"`}
       </h3>

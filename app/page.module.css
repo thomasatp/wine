@@ -18,6 +18,7 @@
   position: fixed;
   top: 20%;
   left: 20%;
+  mix-blend-mode: difference;
 }
 
 .yCoords {
@@ -26,6 +27,7 @@
   position: fixed;
   bottom: 20%;
   right: 20%;
+    mix-blend-mode: difference;
 }
 
 .description {
@@ -47,6 +49,7 @@
   padding: 4rem 0;
   transition: all ease-out 800ms;
   transform-origin: center center;
+  mix-blend-mode: difference;
 }
 
 .center::before {
@@ -76,6 +79,17 @@
 .logo {
   position: relative;
 }
+
+.videoWrapper {
+  position: absolute;
+  display: flex;
+  flex: 1;
+  width: 100%;
+  height: 100dvh;
+
+  clip-path: inset(0);
+}
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
