@@ -36,10 +36,10 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <h3 className={styles.xCoords}>
-        47° 49' {(0.01 * pos.x + 0.05).toFixed(2)}"
+        `47° 49' {(0.01 * pos.x + 0.05).toFixed(2)}"`
       </h3>
       <h3 className={styles.yCoords}>
-        0° 34' {(0.01 * pos.y + 0.05).toFixed(2)}"
+        `0° 34' {(0.01 * pos.y + 0.05).toFixed(2)}"`
       </h3>
       <div
         className={styles.center}
