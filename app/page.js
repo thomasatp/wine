@@ -44,19 +44,20 @@ export default function Home() {
       <div
         className={styles.center}
         style={{
-          transform: `translateX(${-position.x}%) translateY(${
-            -position.y / 2
+          transform: `translateX(${position.x}%) translateY(${
+            position.y / 2
           }%)`,
         }}
       >
         <Player
           ref={player}
-          autoplay
-          loop
+          frame={4}
           src="https://lottie.host/88b44092-94a6-421f-b01a-cf862a5cff28/9lPb9BYkDf.json"
           style={{
-            height: "400px",
-            width: "400px",
+            height: "100%",
+            width: "100%",
+            maxHeight: "400px",
+            maxWidth: "400px",
           }}
         ></Player>
         <h1 className={styles.title}>MATÈRE</h1>
